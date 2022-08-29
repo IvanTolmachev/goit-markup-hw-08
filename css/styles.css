@@ -30,6 +30,7 @@ body {
 
 a {
     text-decoration: none;
+    /* color: inherit; */
 }
 
 ul {
@@ -161,12 +162,12 @@ li {
     background-color: #2F303A ;
 }
 
-.feature-logo {
+.footer-logo {
     font-family: 'Raleway';
     color: #ffffff;
 }
 
-.Footer-logo span {
+.footer-logo span {
     color: var(--accent-color);
 }
 
