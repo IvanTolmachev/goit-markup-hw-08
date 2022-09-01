@@ -84,7 +84,7 @@ li {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -104,7 +104,7 @@ li {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.166;
     text-align: center;
 }
 
@@ -118,13 +118,13 @@ li {
 
 .feature-title {
     font-weight: 700;
-    line-height: 16px;
+    line-height: 1;
     text-transform: uppercase;
 }
 
 .feature-description {
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     color: var(--paragraph-text-color);
 }
 
@@ -141,7 +141,7 @@ li {
 
 .team {
     width: 270px;
-    line-height: 19px;
+    line-height: 1.1875;
     text-align: center;
 }
 
@@ -176,7 +176,7 @@ li {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.5;
     color: var(--paragraph-text-color);
 }
 
@@ -216,8 +216,8 @@ li {
 
 .filter button {
     font-weight: 500;
-    line-height: 26px;
     font-size: 14px;
+    line-height: 1.857;
     text-align: center;
     color: var(--primary-text-color);
     background-color: var(--team-bg-colot);
