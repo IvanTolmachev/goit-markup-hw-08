@@ -69,6 +69,10 @@ li {
 }
 
 .site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -78,6 +82,10 @@ li {
 }
 
 .auth-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
 }
 
@@ -106,6 +114,7 @@ li {
 .hero button {
   font-family: inherit;
   font-size: 16px;
+  line-height: 1.875;
   color: #ffffff;
   background-color: var(--accent-color);
   border: none;
