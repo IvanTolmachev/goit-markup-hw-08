@@ -113,6 +113,7 @@ li {
 
 .hero button {
   font-family: inherit;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   color: #ffffff;
