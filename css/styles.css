@@ -56,7 +56,9 @@ li {
 /* LOGO */
 
 .logo {
+  font-weight: 700;
   font-size: 26px;
+  line-height: 1.19;
   font-family: 'Raleway';
   color: #000000;
 }
@@ -134,7 +136,6 @@ li {
 /* Section */
 
 .section-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
@@ -176,6 +177,10 @@ li {
   text-align: center;
 }
 
+.team li {
+  background-color: var(--body-bg-color);
+}
+
 .team-title {
   font-size: 16px;
   font-weight: 500;
@@ -195,7 +200,9 @@ li {
 }
 
 .footer-logo {
+  font-weight: 700;
   font-size: 26px;
+  line-height: 1.19;
   font-family: 'Raleway';
   color: #ffffff;
 }
@@ -206,7 +213,6 @@ li {
 
 .footer-adress {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
@@ -274,7 +280,7 @@ li {
 .category-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 
