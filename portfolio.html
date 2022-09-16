@@ -15,90 +15,122 @@
   <body>
     <!-- Хедер -->
     <header>
-      <nav>
-        <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
-        <ul class="site">
-          <li><a href="./index.html" class="site-link">Студія</a></li>
-          <li><a href="./portfolio.html" class="site-link current">Портфоліо</a></li>
-          <li><a href="#" class="site-link">Контакти</a></li>
+      <div class="header">
+        <nav>
+          <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
+          <ul class="site">
+            <li>
+              <a href="./index.html" class="site-link">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="site-link current">Портфоліо</a>
+            </li>
+            <li>
+              <a href="#" class="site-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="author">
+          <li>
+            <a href="mailto:info@devstudio.com" class="author-link">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="author-link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="author">
-        <li><a href="mailto:info@devstudio.com" class="author-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="author-link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <main>
-      <section>
-        <!-- Фільтер Портфоліо -->
-        <h1 class="visually-hidden">Портфоліо</h1>
-        <ul class="filter">
-          <li class="filter-list">
-            <button type="button" class="filter-button">Усі</button>
-          </li>
-          <li class="filter-list">
-            <button type="button" class="filter-button">Веб-сайти</button>
-          </li>
-          <li class="filter-list">
-            <button type="button" class="filter-button">Додатки</button>
-          </li>
-          <li class="filter-list">
-            <button type="button" class="filter-button">Дизайн</button>
-          </li>
-          <li class="filter-list">
-            <button type="button" class="filter-button">Маркетинг</button>
-          </li>
-        </ul>
-        <!-- Категоріі портфоліо -->
-        <ul class="category">
-          <li>
-            <img src="./images/Technocrack.jpg" alt="Технокряк" width="370" />
-            <h2 class="category-title">Технокряк</h2>
-            <p class="category-description">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/PosterNO.jpg" alt=">Постер Новий Орлеан" width="370" />
-            <h2 class="category-title">Постер New Orlean vs Golden Star</h2>
-            <p class="category-description">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/Seafood.jpg" alt="Ресторан Морепродукти" width="370" />
-            <h2 class="category-title">Ресторан Seafood</h2>
-            <p class="category-description">Додаток</p>
-          </li>
-          <li>
-            <img src="./images/Prime.jpg" alt="Проєкт Прем'єр" width="370" />
-            <h2 class="category-title">Проєкт Prime</h2>
-            <p class="category-description">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/Boxes.jpg" alt="Проєкт Коробки" width="370" />
-            <h2 class="category-title">Проєкт Boxes</h2>
-            <p class="category-description">Додаток</p>
-          </li>
-          <li>
-            <img src="./images/Inspiration.jpg" alt="Натхнення не має кордонів" width="370" />
-            <h2 class="category-title">Inspiration has no Borders</h2>
-            <p class="category-description">Веб-сайт</p>
-          </li>
-          <li>
-            <img src="./images/Limited.jpg" alt="Обмежене видання" width="370" />
-            <h2 class="category-title">Видання Limited Edition</h2>
-            <p class="category-description">Дизайн</p>
-          </li>
-          <li>
-            <img src="./images/LAB.jpg" alt="Проєкт лаб" width="370" />
-            <h2 class="category-title">Проєкт LAB</h2>
-            <p class="category-description">Маркетинг</p>
-          </li>
-          <li>
-            <img src="./images/GrowingBusiness.jpg" alt="Зростаючий бізнес" width="370" />
-            <h2 class="category-title">Growing Business</h2>
-            <p class="category-description">Додаток</p>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="section">
+          <!-- Фільтер Портфоліо -->
+          <h1 class="visually-hidden">Портфоліо</h1>
+          <ul class="filter">
+            <li class="filter-list">
+              <button type="button" class="filter-button">Усі</button>
+            </li>
+            <li class="filter-list">
+              <button type="button" class="filter-button">Веб-сайти</button>
+            </li>
+            <li class="filter-list">
+              <button type="button" class="filter-button">Додатки</button>
+            </li>
+            <li class="filter-list">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-list">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Категоріі портфоліо -->
+          <ul class="category">
+            <li class="category-list">
+              <img src="./images/Technocrack.jpg" alt="Технокряк" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Технокряк</h2>
+                <p class="category-description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/PosterNO.jpg" alt=">Постер Новий Орлеан" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Постер New Orlean vs Golden Star</h2>
+                <p class="category-description">Дизайн</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/Seafood.jpg" alt="Ресторан Морепродукти" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Ресторан Seafood</h2>
+                <p class="category-description">Додаток</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/Prime.jpg" alt="Проєкт Прем'єр" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Проєкт Prime</h2>
+                <p class="category-description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/Boxes.jpg" alt="Проєкт Коробки" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Проєкт Boxes</h2>
+                <p class="category-description">Додаток</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/Inspiration.jpg" alt="Натхнення не має кордонів" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Inspiration has no Borders</h2>
+                <p class="category-description">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/Limited.jpg" alt="Обмежене видання" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Видання Limited Edition</h2>
+                <p class="category-description">Дизайн</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/LAB.jpg" alt="Проєкт лаб" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Проєкт LAB</h2>
+                <p class="category-description">Маркетинг</p>
+              </div>
+            </li>
+            <li class="category-list">
+              <img src="./images/GrowingBusiness.jpg" alt="Зростаючий бізнес" width="370" />
+              <div class="category-card">
+                <h2 class="category-title">Growing Business</h2>
+                <p class="category-description">Додаток</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <!-- Підвал -->
     <footer class="footer">
