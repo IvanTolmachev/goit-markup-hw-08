@@ -114,9 +114,6 @@ button {
 }
 
 /* site nav */
-.site-nav {
-  display: flex;
-}
 
 .site-nav .item:not(:last-child),
 .aut-nav .item:not(:last-child) {
