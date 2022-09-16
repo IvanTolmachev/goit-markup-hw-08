@@ -96,6 +96,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 15px;
 }
 
 /* LOGO */
@@ -197,7 +198,7 @@ button {
   padding: 94px 0;
 }
 
-.section:nth-child(2) {
+.section-feature {
   padding-bottom: 0;
 }
 
@@ -212,7 +213,6 @@ button {
 
 .list {
   display: flex;
-  text-align: center;
   justify-content: center;
 }
 
@@ -298,7 +298,7 @@ button {
 
 .footer {
   font-style: normal;
-  padding: 60px 0;
+  padding: 60px 15px;
   background-color: var(--footer-bg-color);
 }
 
@@ -386,7 +386,6 @@ button {
 
 .category-list {
   background-color: var(--team-card-bg-color);
-  border: 1px solid var(--border-color);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -400,7 +399,9 @@ button {
 }
 
 .category-card {
-  margin: 20px 24px;
+  text-align: center;
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
 }
 
 .category-title {
