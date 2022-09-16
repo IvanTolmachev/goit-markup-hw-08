@@ -346,8 +346,7 @@ button {
   margin-bottom: 50px;
 }
 
-.filter-list {
-  display: inline-block;
+.filter-list:not(:last-child) {
   margin-right: 30px;
 }
 
