@@ -136,10 +136,6 @@ button {
   color: var(--accent-color);
 }
 
-.aut-nav {
-  display: flex;
-}
-
 .aut-link {
   font-weight: 500;
   line-height: 1.14;
