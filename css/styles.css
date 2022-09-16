@@ -6,6 +6,7 @@
   --accent-color: #2196f3;
   --accent-bg-color: #188ce8;
   --logo-color-text: #000000;
+  --logo-footer-color: #ffffff;
   --team-bg-colot: #f5f4fa;
   --team-card-bg-color: #ffffff;
   --body-bg-color: #ffffff;
@@ -303,7 +304,7 @@ button {
   font-size: 26px;
   line-height: 1.19;
   font-family: 'Raleway', sans-serif;
-  color: #ffffff;
+  color: var(--logo-footer-color);
   display: inline-block;
   margin-bottom: 20px;
 }
