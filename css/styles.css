@@ -201,7 +201,6 @@ button {
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
-  display: block;
   margin-bottom: 50px;
 }
 
@@ -213,7 +212,6 @@ button {
 /* Feature */
 
 .feature-list {
-  display: inline-block;
   width: 270px;
   margin-right: 30px;
 }
@@ -239,13 +237,8 @@ button {
 
 /* Employment */
 
-.employment-list {
-  display: inline-block;
+.employment-list:not(:last-child) {
   margin-right: 30px;
-}
-
-.employment-list:last-child {
-  margin-right: 0;
 }
 
 /* Team */
@@ -256,14 +249,13 @@ button {
 
 .team-list {
   background: var(--team-card-bg-color);
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   display: inline-block;
 }
-.team-list:last-child {
-  margin-right: 0;
+.team-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-card {
