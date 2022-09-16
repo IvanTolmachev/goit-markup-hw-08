@@ -290,7 +290,6 @@ button {
 /* Footer */
 
 .footer {
-  font-style: normal;
   padding: 60px 0;
   background-color: var(--footer-bg-color);
 }
