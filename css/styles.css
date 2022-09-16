@@ -298,7 +298,7 @@ button {
 
 .footer {
   font-style: normal;
-  padding: 60px 15px;
+  padding: 60px 0;
   background-color: var(--footer-bg-color);
 }
 
