@@ -151,7 +151,7 @@ button {
 }
 
 .hero-title {
-  margin: auto;
+  margin: 0 auto 30px;
   color: var(--secondary-text-color);
   width: 696px;
   font-weight: 900;
@@ -163,7 +163,7 @@ button {
 }
 
 .hero-button {
-  margin: 30px auto 0;
+  margin: auto;
   padding: 10px 32px;
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
