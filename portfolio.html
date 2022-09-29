@@ -36,18 +36,28 @@
         </nav>
         <ul class="aut-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="aut-link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="aut-link">
+              <svg class="aut-nav-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="aut-link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="aut-link">
+              <svg class="aut-nav-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <section class="section">
+      <section class="section">
+        <div class="container">
           <!-- Фільтер Портфоліо -->
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filter list">
@@ -70,96 +80,151 @@
           <!-- Категоріі портфоліо -->
           <ul class="category list">
             <li class="category-list">
-              <img src="./images/Technocrack.jpg" alt="Технокряк" width="370" />
+              <img src="./images/technocrack.jpg" alt="Технокряк" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Технокряк</h2>
                 <p class="category-description">Веб-сайт</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/PosterNO.jpg" alt=">Постер Новий Орлеан" width="370" />
+              <img src="./images/posterno.jpg" alt=">Постер Новий Орлеан" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Постер New Orlean vs Golden Star</h2>
                 <p class="category-description">Дизайн</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/Seafood.jpg" alt="Ресторан Морепродукти" width="370" />
+              <img src="./images/seafood.jpg" alt="Ресторан Морепродукти" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Ресторан Seafood</h2>
                 <p class="category-description">Додаток</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/Prime.jpg" alt="Проєкт Прем'єр" width="370" />
+              <img src="./images/prime.jpg" alt="Проєкт Прем'єр" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Проєкт Prime</h2>
                 <p class="category-description">Маркетинг</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/Boxes.jpg" alt="Проєкт Коробки" width="370" />
+              <img src="./images/boxes.jpg" alt="Проєкт Коробки" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Проєкт Boxes</h2>
                 <p class="category-description">Додаток</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/Inspiration.jpg" alt="Натхнення не має кордонів" width="370" />
+              <img src="./images/inspiration.jpg" alt="Натхнення не має кордонів" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Inspiration has no Borders</h2>
                 <p class="category-description">Веб-сайт</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/Limited.jpg" alt="Обмежене видання" width="370" />
+              <img src="./images/limited.jpg" alt="Обмежене видання" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Видання Limited Edition</h2>
                 <p class="category-description">Дизайн</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/LAB.jpg" alt="Проєкт лаб" width="370" />
+              <img src="./images/lab.jpg" alt="Проєкт лаб" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Проєкт LAB</h2>
                 <p class="category-description">Маркетинг</p>
               </div>
             </li>
             <li class="category-list">
-              <img src="./images/GrowingBusiness.jpg" alt="Зростаючий бізнес" width="370" />
+              <img src="./images/growingbusiness.jpg" alt="Зростаючий бізнес" width="370" />
               <div class="category-card">
                 <h2 class="category-title">Growing Business</h2>
                 <p class="category-description">Додаток</p>
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <!-- Підвал -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="footer-logo item"> <span>Web</span>Studio </a>
-        <address class="footer-adress">
-          <ul>
-            <li class="item">
+      <div class="container footer-box">
+        <div class="footer-links">
+          <a href="./index.html" class="footer-logo item"> <span>Web</span>Studio </a>
+          <address class="footer-adress">
+            <ul>
+              <li class="item">
+                <a
+                  href="https://goo.gl/maps/5aM1QwSBFH27AmSq8"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="link link-map"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-soc">
+          <p class="footer-description">приєднуйтесь</p>
+          <ul class="footer-soc-list">
+            <li class="social-item">
               <a
-                href="https://goo.gl/maps/5aM1QwSBFH27AmSq8"
+                class="footer-soc-link"
+                href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="link link-map"
               >
-                м. Київ, пр-т Лесі Українки, 26
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <li class="footer-soc-item">
+              <a
+                class="footer-soc-link"
+                href="https://uk-ua.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <li class="social-item">
+              <a
+                class="footer-soc-link"
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                class="footer-soc-link"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
