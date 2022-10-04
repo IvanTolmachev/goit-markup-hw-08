@@ -116,10 +116,10 @@ textarea {
 
 .logo {
   margin-right: 93px;
-  color: var(--logo-color-text);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  color: var(--logo-color-text);
   font-family: 'Raleway', sans-serif;
 }
 .logo span {
@@ -142,10 +142,10 @@ textarea {
   position: relative;
   display: flex;
   padding: 32px 0;
-  color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
   transition: color 250ms var(--timing-function);
 }
 
@@ -187,10 +187,10 @@ textarea {
   padding: 32px 0;
   display: flex;
   align-items: center;
-  color: var(--paragraph-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--paragraph-text-color);
   transition: color 250ms var(--timing-function);
 }
 
@@ -198,10 +198,10 @@ textarea {
   padding: 32px 0;
   display: flex;
   align-items: center;
-  color: var(--paragraph-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--paragraph-text-color);
   transition: color 250ms var(--timing-function);
 }
 
@@ -227,15 +227,15 @@ textarea {
 }
 
 .hero-title {
+  text-align: center;
   margin: 0 auto 30px;
-  color: var(--secondary-text-color);
   width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
+  color: var(--secondary-text-color);
 }
 
 .hero-button {
@@ -243,13 +243,13 @@ textarea {
   margin-right: auto;
   margin-top: auto;
   padding: 10px 32px;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
@@ -269,11 +269,11 @@ textarea {
 }
 
 .section-title {
+  text-align: center;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
-  text-align: center;
 }
 
 .list {
@@ -317,9 +317,9 @@ textarea {
 }
 
 .feature-description {
-  color: var(--paragraph-text-color);
   line-height: 1.5;
   text-align: left;
+  color: var(--paragraph-text-color);
 }
 
 /* Employment */
@@ -379,22 +379,22 @@ textarea {
 }
 
 .team-title {
+  text-align: center;
   margin-bottom: 10px;
   justify-content: center;
-  color: var(--primary-text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.1875;
-  text-align: center;
+  color: var(--primary-text-color);
 }
 
 .team-description {
-  color: var(--paragraph-text-color);
+  text-align: center;
+  margin-bottom: 16px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.1875;
-  text-align: center;
-  margin-bottom: 16px;
+  color: var(--paragraph-text-color);
 }
 
 .social-list {
@@ -404,12 +404,12 @@ textarea {
 }
 
 .social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   color: var(--icon-color);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
@@ -485,14 +485,14 @@ textarea {
 }
 
 .footer-soc-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   color: var(--icon-color);
+  background-color: rgba(255, 255, 255, 0.1);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
@@ -504,8 +504,8 @@ textarea {
   font-weight: 700;
   line-height: 1.14;
   margin-bottom: 20px;
-  color: var(--logo-footer-color);
   text-transform: uppercase;
+  color: var(--logo-footer-color);
 }
 
 .footer .item + .item {
@@ -514,12 +514,12 @@ textarea {
 
 .footer-logo {
   display: inline-block;
-  color: var(--logo-footer-color);
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   font-family: 'Raleway', sans-serif;
+  color: var(--logo-footer-color);
 }
 
 .footer-logo span {
@@ -531,10 +531,10 @@ textarea {
 }
 
 .footer-adress .link {
-  color: var(--paragraph-text-color);
   font-family: var(--main-font);
   font-weight: 400;
   line-height: 1.71;
+  color: var(--paragraph-text-color);
   transition: color 250ms var(--timing-function);
 }
 
@@ -565,15 +565,15 @@ textarea {
 }
 
 .filter-button {
+  text-align: center;
   padding: 6px 22px;
-  color: var(--primary-text-color);
-  background-color: var(--team-bg-colot);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  text-align: center;
+  color: var(--primary-text-color);
+  background-color: var(--team-bg-colot);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
     box-shadow 250ms var(--timing-function);
 }
@@ -607,9 +607,9 @@ textarea {
 
 .category-text {
   position: absolute;
+  padding: 64px 24px;
   width: 100%;
   height: 100%;
-  padding: 64px 24px;
   left: 0;
   bottom: 0;
   font-size: 18px;
@@ -659,9 +659,9 @@ textarea {
 }
 
 .category-description {
-  color: var(--paragraph-text-color);
   font-size: 16px;
   line-height: 1.875;
+  color: var(--paragraph-text-color);
 }
 
 .backdrop {
@@ -672,22 +672,22 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--bg-backdrop);
   opacity: 1;
+  background-color: var(--bg-backdrop);
   transition: opacity 250ms var(--timing-function);
 }
 
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   width: 528px;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
   background-color: var(--body-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
   transition: transform 250ms var(--timing-function);
 }
 
@@ -710,10 +710,10 @@ textarea {
   top: 8px;
   right: 8px;
   cursor: pointer;
+  border-radius: 50%;
   color: var(--logo-color-text);
   background: var(--body-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   transition: color 250ms var(--timing-function);
 }
 
@@ -737,10 +737,10 @@ textarea {
 }
 
 .form-title {
+  margin: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  margin: 12px;
 }
 
 .modal-field {
@@ -783,9 +783,9 @@ textarea {
   padding-left: 42px;
   height: 40px;
   cursor: pointer;
+  border-radius: 4px;
   color: var(--paragraph-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   outline: var(--accent-color);
   transition: border-color 250ms var(--timing-function);
 }
@@ -829,12 +829,12 @@ textarea {
   margin-top: auto;
   width: 200px;
   height: 50px;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
@@ -874,12 +874,12 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   width: 16px;
   height: 15px;
-  fill: transparent;
-  border: 2px solid var(--logo-color-text);
   border-radius: 1px;
+  fill: transparent;
+  cursor: pointer;
+  border: 2px solid var(--logo-color-text);
   transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
@@ -929,12 +929,12 @@ textarea {
   margin-top: auto;
   width: 200px;
   height: 50px;
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 
