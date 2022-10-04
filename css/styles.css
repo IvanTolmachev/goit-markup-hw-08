@@ -683,7 +683,7 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  min-width: 581px;
+  max-width: 581px;
   background-color: var(--body-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -778,59 +778,9 @@ textarea {
   margin-bottom: 30px;
 }
 
-.checkbox-input {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.checkbox-input:hover + .checkbox-check,
-.checkbox-input:focus + .checkbox-check {
-  border-color: var(--accent-color);
-}
-
-.checkbox-input:checked + .checkbox-check {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
-}
-
-.modal-agree .checkbox-lable {
-  margin-left: 8px;
-  cursor: pointer;
-  color: var(--paragraph-text-color);
-  line-height: 1.714;
-}
-
-.checkbox-check {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 16px;
-  height: 15px;
-  fill: transparent;
-  border: 2px solid var(--logo-color-text);
-  border-radius: 1px;
-  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
-}
-
-.checkbox-icon {
-  display: flex;
-  position: absolute;
-}
-
 .modal-input {
   padding: 11px 12px;
   padding-left: 42px;
-  width: 100%;
   height: 40px;
   cursor: pointer;
   color: var(--paragraph-text-color);
@@ -852,7 +802,6 @@ textarea {
 
 .modal-feedback {
   padding: 12px 16px;
-  /* width: 100%; */
   height: 120px;
   cursor: pointer;
   color: var(--paragraph-text-color);
@@ -893,6 +842,50 @@ textarea {
 .form-btn:focus {
   background-color: var(--accent-bg-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.checkbox-input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.checkbox-input:hover + .checkbox-check,
+.checkbox-input:focus + .checkbox-check {
+  border-color: var(--accent-color);
+}
+
+.checkbox-input:checked + .checkbox-check {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.modal-agree .checkbox-lable {
+  margin-left: 8px;
+  cursor: pointer;
+  color: var(--paragraph-text-color);
+  line-height: 1.714;
+}
+
+.checkbox-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+  fill: transparent;
+  border: 2px solid var(--logo-color-text);
+  border-radius: 1px;
+  transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+}
+
+.checkbox-icon {
+  display: flex;
+  position: absolute;
 }
 
 /* Футер форма */
