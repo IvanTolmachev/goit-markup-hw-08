@@ -737,7 +737,7 @@ textarea {
 }
 
 .form-title {
-  margin: 12px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -747,6 +747,11 @@ textarea {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-field.texarea {
+  margin-bottom: 0;
 }
 
 .form-icon {
@@ -763,7 +768,7 @@ textarea {
 }
 
 .modal-label {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.666;
   letter-spacing: 0.01em;
@@ -814,10 +819,6 @@ textarea {
 .modal-feedback:hover,
 .modal-feedback:focus {
   border-color: var(--accent-color);
-}
-
-.modal-field:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .form-btn {
@@ -891,17 +892,15 @@ textarea {
 /* Футер форма */
 
 .footer-form {
-  display: flex;
   margin-left: auto;
 }
 
 .form-field {
   display: flex;
-  flex-direction: column;
-  margin-right: 12px;
 }
 
 .form-label {
+  display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14;
@@ -910,16 +909,18 @@ textarea {
 }
 
 .form-input {
+  margin-right: 12px;
   padding: 15px 16px;
   width: 358px;
+  height: 50px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  border-radius: 4px;
   color: var(--secondary-text-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
 }
 
 .footer-btn {
