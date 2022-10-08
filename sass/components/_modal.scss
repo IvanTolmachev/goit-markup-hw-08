@@ -1,0 +1,199 @@
+.modal {
+  position: absolute;
+  padding: 40px;
+  width: 528px;
+  top: 50%;
+  left: 50%;
+  border-radius: $borderRadius;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: $bodyBgColor;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform $durationFunction $timingFunction;
+}
+
+.modal__btn-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--logo-color-text);
+  background: var(--body-bg-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: color $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.modal__icon-close {
+  fill: currentColor;
+}
+
+.form {
+  @extend %centered;
+  flex-direction: column;
+}
+
+.modal__form {
+  width: 100%;
+}
+
+.modal__title {
+  @extend %centered;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.modal__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  &-texarea {
+    margin-bottom: 0;
+  }
+}
+
+// .modal__field-texarea {
+//   margin-bottom: 0;
+// }
+
+.modal__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.666;
+  letter-spacing: 0.01em;
+  color: var(--paragraph-text-color);
+}
+
+.modal__input {
+  padding: 11px 12px;
+  padding-left: 42px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: $borderRadius;
+  color: $paragraphTextColor;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: $accentColor;
+  transition: border-color $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+  }
+  &:hover + .modal__icon,
+  &focus + .modal__icon {
+    fill: $accentColor;
+  }
+}
+
+.modal__icon {
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  fill: $logoTextColor;
+  transition: fill $durationFunction $timingFunction;
+}
+
+.modal__feedback {
+  padding: 12px 16px;
+  height: 120px;
+  cursor: pointer;
+  color: var(--paragraph-text-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: $accentColor;
+  transition: border-color $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+  }
+}
+
+.modal__agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modal__checkbox-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 15px;
+  border-radius: 1px;
+  fill: transparent;
+  cursor: pointer;
+  border: 2px solid $logoTextColor;
+  transition: fill $durationFunction $timingFunction, border-color $durationFunction $timingFunction;
+}
+
+.modal__checkbox-input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  &:hover + .modal__checkbox-check,
+  &:focus + .modal__checkbox-check {
+    border-color: $accentColor;
+  }
+  &:checked + .modal__checkbox-check {
+    border-color: $accentColor;
+    fill: $accentColor;
+  }
+}
+
+.modal__checkbox-lable {
+  margin-left: 8px;
+  cursor: pointer;
+  color: var(--paragraph-text-color);
+  line-height: 1.714;
+}
+
+.modal__checkbox-icon {
+  display: flex;
+  position: absolute;
+}
+
+.modal__link {
+  color: $accentColor;
+  text-decoration-line: underline;
+}
+
+.modal__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $secondaryTextColor;
+  background-color: $accentColor;
+  transition: background-color $durationFunction $timingFunction,
+    box-shadow $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

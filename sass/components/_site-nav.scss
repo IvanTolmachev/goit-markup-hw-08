@@ -1,0 +1,81 @@
+.main-nav {
+  @extend %centered;
+}
+
+.main-nav__list {
+  @extend %centered;
+  margin-left: 91px;
+  gap: 50px;
+}
+
+.main-nav__link {
+  position: relative;
+  display: flex;
+  padding: 32px 0;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  transition: color $durationFunction $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accentColor;
+    transform: scaleX(0);
+    transition: transform $durationFunction $timingFunction;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+  }
+  &--current {
+    color: $accentColor;
+  }
+  &--current:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accentColor;
+    transform: scaleX(1);
+  }
+}
+
+.aut-nav {
+  @extend %centered;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.aut-nav__link {
+  @extend %centered;
+  padding: 32px 0;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $paragraphTextColor;
+  transition: color $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.aut-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

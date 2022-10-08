@@ -1,0 +1,63 @@
+.category {
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.category__list {
+  display: flex;
+  width: 100%;
+  background-color: $CardBgColor;
+}
+
+.category__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.category__text {
+  position: absolute;
+  padding: 64px 24px;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  line-height: 1.555;
+  color: $secondaryTextColor;
+  background-color: $cardAccentColor;
+  transform: translateY(101%);
+  transition: transform $durationFunction $timingFunction;
+  overflow: auto;
+}
+
+.category__link {
+  color: inherit;
+  display: block;
+  transition: box-shadow $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .category__text,
+  &:focus .category__text {
+    transform: translateY(0);
+  }
+}
+
+.category__card {
+  padding: 20px 24px;
+  border: 1px solid $borderColor;
+}
+
+.category__title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.category__descript {
+  font-size: 16px;
+  line-height: 1.875;
+  color: $paragraphTextColor;
+}
