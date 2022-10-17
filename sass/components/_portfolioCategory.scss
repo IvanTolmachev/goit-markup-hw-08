@@ -1,17 +1,28 @@
-.category {
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .category__list {
   display: flex;
-  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
   background-color: $CardBgColor;
+}
+
+.category__item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .category__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.category__img {
+  width: 100%;
 }
 
 .category__text {
@@ -20,7 +31,7 @@
   left: 0;
   bottom: 0;
   font-size: 18px;
-  line-height: 1.555;
+  line-height: calc(28 / 18);
   color: $secondaryTextColor;
   background-color: $cardAccentColor;
   transform: translateY(101%);
@@ -30,7 +41,6 @@
 
 .category__link {
   color: inherit;
-  display: block;
   transition: box-shadow $durationFunction $timingFunction;
   &:hover,
   &:focus {
@@ -46,18 +56,25 @@
 .category__card {
   padding: 20px 24px;
   border: 1px solid $borderColor;
+  border-top: none;
+
+  &--first {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-bottom: 56px;
+    }
+  }
 }
 
 .category__title {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
 
 .category__descript {
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   color: $paragraphTextColor;
 }

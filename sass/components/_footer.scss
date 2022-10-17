@@ -1,5 +1,4 @@
 .footer {
-  // height: 252px;
   padding: 60px 0;
   background-color: $footerBgColor;
 }
@@ -18,7 +17,7 @@
 }
 
 .footer__links {
-  min-width: 230px;
+  min-width: 232px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 165px;
   }

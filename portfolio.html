@@ -19,15 +19,32 @@
   <body>
     <!-- Хедер -->
     <header class="page-header">
-      <div class="container main-nav">
+      <div class="container main">
+        <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-toggle__img"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="main-nav">
-          <a href="./index.html" class="logo"> <span>Web</span>Studio </a>
           <ul class="main-nav__list">
             <li>
               <a href="./index.html" class="main-nav__link">Студія</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="main-nav__link main-nav__link--current"
+              <a
+                href="./portfolio.html"
+                class="main-nav__link main-nav__link--current"
                 >Портфоліо</a
               >
             </li>
@@ -39,7 +56,7 @@
         <ul class="aut-nav">
           <li>
             <a href="mailto:info@devstudio.com" class="aut-nav__link">
-              <svg class="aut-nav__icon" width="16" height="12">
+              <svg class="aut-nav__icon-envelope" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -47,7 +64,7 @@
           </li>
           <li>
             <a href="tel:+380961111111" class="aut-nav__link">
-              <svg class="aut-nav__icon" width="10" height="16">
+              <svg class="aut-nav__icon-smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -84,14 +101,20 @@
             <li class="category__item">
               <a href="#" class="category__link">
                 <div class="category__thumb">
-                  <img src="./images/technocrack.jpg" alt="Технокряк" width="370" height="294" />
+                  <img
+                    class="category__img"
+                    src="./images/technocrack.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    height="294"
+                  />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="category__card">
+                <div class="category__card category__card--first">
                   <h2 class="category__title">Технокряк</h2>
                   <p class="category__descript">Веб-сайт</p>
                 </div>
@@ -101,19 +124,22 @@
               <a href="#" class="category__link">
                 <div class="category__thumb">
                   <img
+                    class="category__img"
                     src="./images/posterno.jpg"
                     alt=">Постер Новий Орлеан"
                     width="370"
                     height="294"
                   />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
-                  <h2 class="category__title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="category__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="category__descript">Дизайн</p>
                 </div>
               </a>
@@ -122,15 +148,16 @@
               <a href="#" class="category__link">
                 <div class="category__thumb">
                   <img
+                    class="category__img"
                     src="./images/seafood.jpg"
                     alt="Ресторан Морепродукти"
                     width="370"
                     height="294"
                   />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
@@ -142,11 +169,17 @@
             <li class="category__item">
               <a href="#" class="category__link">
                 <div class="category__thumb">
-                  <img src="./images/prime.jpg" alt="Проєкт Прем'єр" width="370" height="294" />
+                  <img
+                    class="category__img"
+                    src="./images/prime.jpg"
+                    alt="Проєкт Прем'єр"
+                    width="370"
+                    height="294"
+                  />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
@@ -155,14 +188,20 @@
                 </div>
               </a>
             </li>
-            <li class="category-__item">
+            <li class="category__item">
               <a href="#" class="category__link">
                 <div class="category__thumb">
-                  <img src="./images/boxes.jpg" alt="Проєкт Коробки" width="370" height="294" />
+                  <img
+                    class="category__img"
+                    src="./images/boxes.jpg"
+                    alt="Проєкт Коробки"
+                    width="370"
+                    height="294"
+                  />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
@@ -175,15 +214,16 @@
               <a href="#" class="category__link">
                 <div class="category__thumb">
                   <img
+                    class="category__img"
                     src="./images/inspiration.jpg"
                     alt="Натхнення не має кордонів"
                     width="370"
                     height="294"
                   />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
@@ -195,11 +235,17 @@
             <li class="category__item">
               <a href="#" class="category__link">
                 <div class="category__thumb">
-                  <img src="./images/limited.jpg" alt="Обмежене видання" width="370" height="294" />
+                  <img
+                    class="category__img"
+                    src="./images/limited.jpg"
+                    alt="Обмежене видання"
+                    width="370"
+                    height="294"
+                  />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
@@ -211,11 +257,17 @@
             <li class="category__item">
               <a href="#" class="category__link">
                 <div class="category__thumb">
-                  <img src="./images/lab.jpg" alt="Проєкт лаб" width="370" height="294" />
+                  <img
+                    class="category__img"
+                    src="./images/lab.jpg"
+                    alt="Проєкт лаб"
+                    width="370"
+                    height="294"
+                  />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
@@ -228,15 +280,16 @@
               <a href="#" class="category__link">
                 <div class="category__thumb">
                   <img
+                    class="category__img"
                     src="./images/growingbusiness.jpg"
                     alt="Зростаючий бізнес"
                     width="370"
                     height="294"
                   />
                   <p class="category__text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
-                    приватну особу.
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="category__card">
@@ -249,11 +302,96 @@
         </div>
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-toggle__img"
+          width="40"
+          height="40"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu">
+          <li>
+            <a
+              href="./index.html"
+              class="mobile-menu__link mobile-menu__link--current"
+              >Студія</a
+            >
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-menu mobile-menu--bind">
+        <li>
+          <a href="tel:+380961111111" class="mobile-menu__tel"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="mobile-menu__mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu-soc__list">
+        <li class="menu-soc__item">
+          <a
+            class="menu-soc__link"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            instagram
+          </a>
+        </li>
+        <li class="menu-soc__item">
+          <a
+            class="menu-soc__link"
+            href="https://www.twitter.com"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            twitter
+          </a>
+        </li>
+        <li class="menu-soc__item">
+          <a
+            class="menu-soc__link"
+            href="https://uk-ua.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            facebook
+          </a>
+        </li>
+        <li class="menu-soc__item">
+          <a
+            class="menu-soc__link"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
     <!-- Підвал -->
     <footer class="footer">
       <div class="container footer__box">
         <div class="footer__links">
-          <a href="./index.html" class="logo logo--invers item"> <span>Web</span>Studio </a>
+          <a href="./index.html" class="logo logo--invers item">
+            <span>Web</span>Studio
+          </a>
           <address class="footer__adress">
             <ul class="footer__list">
               <li class="footer__item">
@@ -267,10 +405,14 @@
                 </a>
               </li>
               <li class="footer__item">
-                <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+                <a href="mailto:info@devstudio.com" class="footer__link"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="footer__item">
-                <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="footer__link"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -350,6 +492,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

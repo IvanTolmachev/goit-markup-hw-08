@@ -2,6 +2,7 @@
   display: block;
   font-weight: 700;
   font-size: 26px;
+  text-align: center;
   line-height: calc(31 / 26);
   color: $logoTextColor;
   font-family: $logoFont;
@@ -12,12 +13,8 @@
     color: $accentColor;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     font-size: 24px;
     line-height: calc(28 / 24);
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    text-align: center;
   }
 }

@@ -10,6 +10,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform $durationFunction $timingFunction;
+
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
 }
 
 .modal__btn-close {
@@ -47,11 +51,11 @@
 }
 
 .modal__title {
-  @extend %centered;
+  text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: calc(23 / 20);
 }
 
 .modal__field {
@@ -64,14 +68,10 @@
   }
 }
 
-// .modal__field-texarea {
-//   margin-bottom: 0;
-// }
-
 .modal__label {
   margin-bottom: 4px;
   font-size: 12px;
-  line-height: 1.666;
+  line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--paragraph-text-color);
 }
@@ -98,7 +98,7 @@
 
 .modal__icon {
   position: absolute;
-  top: 35px;
+  top: 30px;
   left: 12px;
   fill: $logoTextColor;
   transition: fill $durationFunction $timingFunction;
@@ -138,7 +138,8 @@
   fill: transparent;
   cursor: pointer;
   border: 2px solid $logoTextColor;
-  transition: fill $durationFunction $timingFunction, border-color $durationFunction $timingFunction;
+  transition: fill $durationFunction $timingFunction,
+    border-color $durationFunction $timingFunction;
 }
 
 .modal__checkbox-input {
@@ -161,7 +162,11 @@
   margin-left: 8px;
   cursor: pointer;
   color: var(--paragraph-text-color);
-  line-height: 1.714;
+  line-height: calc(24 / 14);
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
 }
 
 .modal__checkbox-icon {
@@ -185,7 +190,7 @@
   height: 50px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: $secondaryTextColor;
   background-color: $accentColor;

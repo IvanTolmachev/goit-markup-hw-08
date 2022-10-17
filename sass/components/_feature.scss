@@ -4,23 +4,13 @@
   }
 }
 .feature__list {
-  @extend %centered;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-direction: row;
   gap: 30px;
-  flex-direction: column;
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  @media screen and (min-width: 1200px) {
-    align-items: baseline;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
 }
 .feature__item {
-  align-content: center;
-
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -31,8 +21,8 @@
 
 .feature__box {
   @extend %centered;
-  height: 120px;
   margin-bottom: 30px;
+  height: 120px;
   background-color: $teamBgColot;
   border-radius: 4px;
   transition: box-shadow $durationFunction $timingFunction;
@@ -52,9 +42,6 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
-  @media screen and (min-width: 1200px) {
-    text-align: left;
-  }
 }
 
 .feature__text {
@@ -63,9 +50,6 @@
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    text-align: left;
-  }
-  @media screen and (min-width: 1200px) {
     text-align: left;
   }
 }

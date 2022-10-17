@@ -2,10 +2,18 @@
   display: inline-flex;
   margin-left: auto;
   background-color: transparent;
-
+  transition: color $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.menu-toggle__img {
+  fill: currentColor;
 }
 
 .menu-container {
@@ -23,9 +31,9 @@
 
   transform: translateX(150%);
   transition: transform 250ms ease-in-out;
-}
-.menu-container.is-open {
-  transform: translateX(0);
+  &.is-open {
+    transform: translateX(0);
+  }
 }
 
 .menu-container .menu-toggle {
@@ -48,8 +56,12 @@
   font-size: 40px;
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
-  display: block;
   color: inherit;
+  transition: color $durationFunction $timingFunction;
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .mobile-menu__tel {
@@ -78,10 +90,8 @@
   &:not(:last-child)::after {
     content: '';
     margin: 0 10px;
-    padding: 0;
     width: 1px;
     height: 100%;
-    color: red;
     border-left: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
   }

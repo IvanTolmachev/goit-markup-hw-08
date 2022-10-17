@@ -1,23 +1,40 @@
 .filter {
   @extend %centered;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 }
 
 .filter__list {
   gap: 8px;
+  row-gap: 15px;
+  & li:nth-child(3) {
+    @media screen and (max-width: 767px) {
+      margin-right: 120px;
+    }
+  }
 }
 
 .filter__button {
   text-align: center;
   padding: 6px 22px;
+  min-width: 73px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625;
+  line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: $primaryTextColor;
   background-color: $teamBgColot;
   transition: color $durationFunction $timingFunction,
-    background-color $durationFunction $timingFunction, box-shadow $durationFunction $timingFunction;
+    background-color $durationFunction $timingFunction,
+    box-shadow $durationFunction $timingFunction;
   &:hover,
   &:focus {
     color: $secondaryTextColor;

@@ -4,13 +4,11 @@
 
 .team__title {
   text-align: center;
-
   font-weight: 700;
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: calc(33 / 28);
-  }
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
     font-size: 36px;
@@ -21,18 +19,8 @@
 .team__list {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
-
-  @media screen and (min-width: 768px) {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  @media screen and (min-width: 1200px) {
-    align-items: baseline;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
 }
 
 .team__item {
@@ -59,11 +47,11 @@
 
 .team__card-title {
   text-align: center;
-  margin-bottom: 10px;
   justify-content: center;
-  font-size: 16px;
+  margin-bottom: 10px;
   font-weight: 500;
-  line-height: 1.1875;
+  font-size: 16px;
+  line-height: calc(19 / 16);
   color: $primaryTextColor;
 }
 

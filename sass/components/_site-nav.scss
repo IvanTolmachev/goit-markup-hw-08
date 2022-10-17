@@ -10,20 +10,16 @@
 }
 
 .main-nav__list {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  gap: 50px;
+  display: none;
 
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
-    gap: 50px;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     margin-left: 91px;
-    gap: 50px;
   }
 }
 
@@ -84,7 +80,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     flex-direction: row;
     gap: 30px;
   }
@@ -93,6 +88,9 @@
 .aut-nav__link {
   display: flex;
   align-items: center;
+  padding: 5px 0;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $paragraphTextColor;
@@ -101,11 +99,7 @@
   &:focus {
     color: $accentColor;
   }
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    padding: 5px 0;
-  }
+
   @media screen and (min-width: 1200px) {
     font-size: inherit;
     line-height: calc(16 / 14);
@@ -116,6 +110,7 @@
 .aut-nav__icon-envelope {
   margin-right: 10px;
   fill: currentColor;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 8px;
     width: 14px;
@@ -126,6 +121,7 @@
 .aut-nav__icon-smartphone {
   margin-right: 10px;
   fill: currentColor;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 8px;
     width: 10px;
