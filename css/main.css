@@ -121,7 +121,7 @@ textarea {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .page-header {
     height: 60px;
     display: flex;
@@ -309,12 +309,10 @@ textarea {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu-toggle {
-    display: inline-flex;
-    margin-left: auto;
-    background-color: transparent;
-  }
+.menu-toggle {
+  display: inline-flex;
+  margin-left: auto;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
