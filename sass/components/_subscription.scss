@@ -17,7 +17,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $secondaryTextColor;
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -34,7 +34,7 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 450px;
     margin-bottom: 20px;
   }
@@ -63,7 +63,7 @@
     background-color: $accentBtnColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     margin: 0 auto;
   }
 }
