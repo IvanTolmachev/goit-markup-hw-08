@@ -4,23 +4,53 @@
 
 .team__title {
   text-align: center;
-  margin-bottom: 50px;
+
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }
 
 .team__list {
-  @extend %centered;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .team__item {
-  display: inline-block;
   background: $teamCardBgColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.team__img {
+  width: auto;
 }
 
 .team__card {
@@ -42,6 +72,6 @@
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.1875;
+  line-height: calc(19 / 16);
   color: $paragraphTextColor;
 }

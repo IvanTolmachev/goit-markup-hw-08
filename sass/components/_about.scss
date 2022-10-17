@@ -1,3 +1,15 @@
+.about {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .about__title {
   text-align: center;
   margin-bottom: 50px;

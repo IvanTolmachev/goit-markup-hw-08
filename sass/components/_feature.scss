@@ -1,19 +1,36 @@
 .feature {
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 .feature__list {
   @extend %centered;
-  align-items: baseline;
   gap: 30px;
+  flex-direction: column;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 .feature__item {
-  width: 270px;
+  align-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .feature__box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %centered;
   height: 120px;
   margin-bottom: 30px;
   background-color: $teamBgColot;
@@ -30,11 +47,25 @@
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .feature__text {
   line-height: 1.5;
-  text-align: left;
   color: $paragraphTextColor;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
