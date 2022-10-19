@@ -19,17 +19,19 @@
 .category__thumb {
   position: relative;
   overflow: hidden;
-}
-
-.category__img {
-  width: 100%;
+  & img {
+    width: auto;
+  }
 }
 
 .category__text {
   position: absolute;
-  padding: 64px 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
   left: 0;
   bottom: 0;
+  height: 100%;
   font-size: 18px;
   line-height: calc(28 / 18);
   color: $secondaryTextColor;
@@ -40,6 +42,7 @@
 }
 
 .category__link {
+  display: block;
   color: inherit;
   transition: box-shadow $durationFunction $timingFunction;
   &:hover,

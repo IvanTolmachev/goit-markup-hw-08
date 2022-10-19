@@ -147,30 +147,54 @@
           <h2 class="about__title">Чим ми займаємося</h2>
           <ul class="about__list">
             <li class="about__item">
-              <img
-                src="./images/desktopapplications.jpg"
-                alt="Десктопні додатки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktopapplications.jpg    1x,
+                    ./images/desktopapplications@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/desktopapplications.jpg"
+                  alt="Десктопні додатки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="about__text">Десктопні додатки</p>
             </li>
             <li class="about__item">
-              <img
-                src="./images/mobileapplications.jpg"
-                alt="Мобільні додатки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobileapplications.jpg    1x,
+                    ./images/mobileapplications@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/mobileapplications.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="about__text">Мобільні додатки</p>
             </li>
             <li class="about__item">
-              <img
-                src="./images/designsolutions.jpg"
-                alt="Мобільні додатки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/designsolutions.jpg    1x,
+                    ./images/designsolutions@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/designsolutions.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="about__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -183,13 +207,36 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/productdesigner.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/productdesigner-phone.jpg    1x,
+                    ./images/productdesigner-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/productdesigner-tablet.jpg    1x,
+                    ./images/productdesigner-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/productdesigner.jpg    1x,
+                    ./images/productdesigner@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="team__img"
+                  src="./images/productdesigner.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                  height="294"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__card-title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -246,13 +293,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/frontenddeveloper.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/frontenddeveloper-phone.jpg    1x,
+                    ./images/frontenddeveloper-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontenddeveloper-tablet.jpg    1x,
+                    ./images/frontenddeveloper-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontenddeveloper.jpg    1x,
+                    ./images/frontenddeveloper@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/frontenddeveloper.jpg"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                  height="260"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__card-title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -309,13 +379,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/marketing.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/marketing-phone.jpg    1x,
+                    ./images/marketing-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-tablet.jpg    1x,
+                    ./images/marketing-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing.jpg    1x,
+                    ./images/marketing@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/marketing.jpg"
+                  alt="Микола Тарасов"
+                  width="270"
+                  height="260"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__card-title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -372,13 +465,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/uidesigner.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-                class="team__img"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/uidesigner-phone.jpg    1x,
+                    ./images/uidesigner-phone@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/uidesigner-tablet.jpg    1x,
+                    ./images/uidesigner-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/uidesigner.jpg    1x,
+                    ./images/uidesigner@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/uidesigner.jpg"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                  height="260"
+                  class="team__img"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__card-title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
