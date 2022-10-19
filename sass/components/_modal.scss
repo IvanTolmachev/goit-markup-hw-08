@@ -11,7 +11,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform $durationFunction $timingFunction;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 479px) {
+    width: 300px;
+  }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
   }
 }
@@ -132,7 +135,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border-radius: 1px;
   fill: transparent;

@@ -58,6 +58,9 @@
   letter-spacing: 0.02em;
   color: inherit;
   transition: color $durationFunction $timingFunction;
+  &--current {
+    color: $accentColor;
+  }
   &:hover,
   &:focus {
     color: $accentColor;
@@ -70,6 +73,9 @@
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: $accentColor;
+  @media screen and (max-width: 390px) {
+    font-size: 24px;
+  }
 }
 
 .mobile-menu__mail {
@@ -84,16 +90,24 @@
   display: flex;
   justify-content: center;
   margin-top: 64px;
+  @media screen and (max-width: 479px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    row-gap: 10px;
+  }
 }
 
 .menu-soc__item {
   &:not(:last-child)::after {
-    content: '';
-    margin: 0 10px;
-    width: 1px;
-    height: 100%;
-    border-left: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
+    @media screen and (min-width: 480px) {
+      content: '';
+      margin: 0 10px;
+      width: 1px;
+      height: 100%;
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
+      transform: rotate(90deg);
+    }
   }
 }
 

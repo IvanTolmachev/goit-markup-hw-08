@@ -69,13 +69,16 @@
 .hero__title {
   text-align: center;
   margin: 0 auto 30px;
-  width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: calc(42 / 26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $secondaryTextColor;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 696px;
