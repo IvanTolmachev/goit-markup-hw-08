@@ -100,14 +100,12 @@
 
 .menu-soc__item {
   &:not(:last-child)::after {
-    @media screen and (min-width: 480px) {
-      content: '';
-      margin: 0 10px;
-      width: 1px;
-      height: 100%;
-      border-left: 1px solid rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
-    }
+    content: '';
+    margin: 0 10px;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
   }
 }
 

@@ -47,9 +47,4 @@
 .feature__text {
   line-height: 1.5;
   color: $paragraphTextColor;
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    text-align: left;
-  }
 }

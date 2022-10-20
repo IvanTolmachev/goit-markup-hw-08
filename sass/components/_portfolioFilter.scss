@@ -15,11 +15,6 @@
 .filter__list {
   gap: 8px;
   row-gap: 15px;
-  & li:nth-child(3) {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      margin-right: 120px;
-    }
-  }
 }
 
 .filter__button {
